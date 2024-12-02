@@ -172,7 +172,6 @@
       // Display winning message
       setTimeout(() => {
         const winningSymbol = symbols[randomIndex];
-        const prize = (randomIndex + 1) * 10; // Example prize calculation
         console.log('winningSymbol', winningSymbol.name);
         console.log('winningSymbol', winningSymbol.prize);
         message.textContent = `${winningSymbol.name} wins $${parseFloat(winningSymbol.prize).toFixed(2)}`;
