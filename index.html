@@ -92,12 +92,12 @@
     for (i = 0; i < symbols.length; i++) {
       //Create the divs:
       var div = document.createElement('div');
-      div.addClass('symbol');
+      div.classList.add('symbol')
       reel.appendChild(div);
       var img = document.createElement('img');
       div.appendChild(img);
       img.attr('src', symbols[i].src);
-      img.addClass('symbols[i].class');
+      img.classList.add(symbols[i].class);
     }
     
     document.getElementById('spin-button').addEventListener('click', () => {
