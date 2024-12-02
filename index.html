@@ -8,7 +8,10 @@
       text-align: center; font-family: Arial, sans-serif; 
     }
     #slot-container { 
-      position: relative; overflow: hidden; display: flex; justify-content: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
     }
     #reel { 
       display: flex; top: 0; position: relative;
@@ -20,7 +23,14 @@
       width: 100%;
     }
     #win-frame { 
-      background-image: url("./winframe.png"); position: absolute; top: 75px; left: 0; width: 200px; height: 50px; border: 2px solid red; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); pointer-events: none; 
+      background-image: url("./winframe.png");
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      top: -14%;
     }
     #message {
       margin-top: 20px; font-size: 18px; 
