@@ -1,1 +1,34 @@
-<div>TEST</div>
+<div id="slot-container">
+    <div id="reel">
+      <div class="symbol">A</div>
+      <div class="symbol">K</div>
+      <div class="symbol">Q</div>
+      <div class="symbol">J</div>
+      <div class="symbol">10</div>
+    </div>
+    <div id="win-frame"></div>
+  </div>
+  <div id="message"></div>
+  <button id="spin-button">Spin</button>
+
+  <script>
+    const reel = document.getElementById('reel');
+    const message = document.getElementById('message');
+    const symbols = ['A', 'K', 'Q', 'J', '10'];
+
+    document.getElementById('spin-button').addEventListener('click', () => {
+      // Randomize the result
+      const randomIndex = Math.floor(Math.random() * symbols.length);
+      const stopPosition = -randomIndex * 50; // Assuming symbol height is 50px
+
+      // Animate reel spin
+      reel.style.top = `${stopPosition}px`;
+
+      // Display winning message
+      setTimeout(() => {
+        const winningSymbol = symbols[randomIndex];
+        const prize = (randomIndex + 1) * 10; // Example prize calculation
+        message.textContent = `${winningSymbol} wins $${prize.toFixed(2)}`;
+      }, 1000); // Wait for animation to complete
+    });
+  </script>
