@@ -95,9 +95,11 @@
       div.classList.add('symbol')
       reel.appendChild(div);
       var img = document.createElement('img');
-      div.appendChild(img);
-      img.attr('src', symbols[i].src);
+      img.src = symbols[i].src;
       img.classList.add(symbols[i].class);
+      div.appendChild(img);
+      //img.attr('src', symbols[i].src);
+
     }
     
     document.getElementById('spin-button').addEventListener('click', () => {
