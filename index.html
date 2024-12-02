@@ -96,7 +96,7 @@
     console.log('symbols',symbols);
     let renderIndex = 5;
     // Create the reel imgs
-    for (i = 0; i < symbols.lenght; i++) {
+    for (i = 0; i < symbols.length; i++) {
       //Create the divs:
       var div = document.createElement('div');
       div.classList.add('symbol')
@@ -105,7 +105,6 @@
       img.src = symbols[i].src;
       img.classList.add(symbols[i].class);
       div.appendChild(img);
-      //img.attr('src', symbols[i].src);
 
     }
     
