@@ -32,3 +32,12 @@
       }, 1000); // Wait for animation to complete
     });
   </script>
+<style>
+    body { text-align: center; font-family: Arial, sans-serif; }
+    #slot-container { position: relative; width: 200px; height: 200px; overflow: hidden; margin: 0 auto; }
+    #reel { position: absolute; display: flex; flex-direction: column; top: 0; transition: top 1s ease; }
+    .symbol { width: 200px; height: 50px; display: flex; align-items: center; justify-content: center; background: #eee; border: 1px solid #ccc; }
+    #win-frame { position: absolute; top: 75px; left: 0; width: 200px; height: 50px; border: 2px solid red; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); pointer-events: none; }
+    #message { margin-top: 20px; font-size: 18px; }
+    #spin-button { margin-top: 20px; padding: 10px 20px; font-size: 18px; }
+  </style>
