@@ -11,7 +11,7 @@
       position: relative; overflow: hidden; display: flex; justify-content: center;
     }
     #reel { 
-      display: flex; top: 0; transition: top 1s ease; 
+      display: flex; top: 0; position: relative;
     }
     .symbol { 
      display: flex; align-items: center; justify-content: center; width: 100px; height: 100px;
@@ -101,7 +101,7 @@
     document.getElementById('spin-button').addEventListener('click', () => {
       // Randomize the result
       const randomIndex = Math.floor(Math.random() * symbols.length);
-      const stopPosition = -randomIndex * 50; // Assuming symbol height is 50px
+      //const stopPosition = -randomIndex * 50; // Assuming symbol height is 50px
 
       // Animate reel spin
       reel.style.top = `${stopPosition}px`;
