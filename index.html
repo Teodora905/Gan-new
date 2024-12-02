@@ -154,7 +154,8 @@
       setTimeout(() => {
         const winningSymbol = symbols[randomIndex];
         const prize = (randomIndex + 1) * 10; // Example prize calculation
-        console.log('winningSymbol', winningSymbol);
+        console.log('winningSymbol', winningSymbol.name);
+        console.log('winningSymbol', winningSymbol.prize);
         message.textContent = `${winningSymbol.name} wins $${winningSymbol.prize.toFixed(2)}`;
       }, 1000); // Wait for animation to complete
     });
