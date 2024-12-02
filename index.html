@@ -113,10 +113,10 @@
       // Randomize the result
       const randomIndex = Math.floor(Math.random() * symbols.length);
       console.log('randomIndex', randomIndex);
-      //const stopPosition = -randomIndex * 50; // Assuming symbol height is 50px
+      const stopPosition = -randomIndex * 100; // Assuming symbol height is 100px
 
       // Animate reel spin
-      reel.style.top = `${stopPosition}px`;
+      reel.style.left = `${stopPosition}px`;
 
       // Display winning message
       setTimeout(() => {
