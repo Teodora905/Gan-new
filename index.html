@@ -11,7 +11,14 @@
     body:before {
       content: '';
       display: block;
-      background-image: url("./background.png");
+      background-image: url(./background.jpg);
+      position: absolute;
+      width: calc(100vw - 25px);
+      height: calc(100vh - -25px);
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      top: 0;
     }
     #slot-container { 
       position: relative;
