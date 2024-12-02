@@ -66,42 +66,62 @@
     const message = document.getElementById('message');
     const symbols = [
       {
+        'prize' : '10',
+        'name' : '10',
         'src' : './symbol_10.png',
         'class' : 'symbol-10'
       },
       {
+        'prize' : '20',
+        'name' : '9',
         'src' : './symbol_9.png',
         'class' : 'symbol-9'
       },
       {
+        'prize' : '30',
+        'name' : 'ace',
         'src' : './symbol_ace.png',
         'class' : 'symbol-ace'
       },
       {
+        'prize' : '40',
+        'name' : 'axe',
         'src' : './symbol_axe.png',
         'class' : 'symbol-axe'
       },
       {
+        'prize' : '40',
+        'name' : 'brain',
         'src' : './symbol_brain.png',
         'class' : 'symbol-brain'
       },
       {
+        'prize' : '50',
+        'name' : 'crow',
         'src' : './symbol_crow.png',
         'class' : 'symbol-crow'
       },
       {
+        'prize' : '60',
+        'name' : 'jack',
         'src' : './symbol_jack.png',
         'class' : 'symbol-jack'
       },
       {
+        'prize' : '70',
+        'name' : 'king',
         'src' : './symbol_king.png',
         'class' : 'symbol-king'
       },
       {
+        'prize' : '80',
+        'name' : 'queen',
         'src' : './symbol_queen.png',
         'class' : 'symbol-queen'
       },
       {
+        'prize' : '90',
+        'name' : 'rifle',
         'src' : './symbol_rifle.png',
         'class' : 'symbol-rifle'
       },
@@ -134,7 +154,7 @@
       setTimeout(() => {
         const winningSymbol = symbols[randomIndex];
         const prize = (randomIndex + 1) * 10; // Example prize calculation
-        message.textContent = `${winningSymbol} wins $${prize.toFixed(2)}`;
+        message.textContent = `${winningSymbol.name} wins $${prize.toFixed(2)}`;
       }, 1000); // Wait for animation to complete
     });
   </script>
