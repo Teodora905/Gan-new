@@ -112,6 +112,7 @@
     document.getElementById('spin-button').addEventListener('click', () => {
       // Randomize the result
       const randomIndex = Math.floor(Math.random() * symbols.length);
+      console.log('randomIndex', randomIndex);
       //const stopPosition = -randomIndex * 50; // Assuming symbol height is 50px
 
       // Animate reel spin
