@@ -88,6 +88,18 @@
       },
     ];
     console.log('symbols',symbols);
+    // Create the reel imgs
+    for (i = 0; i < symbols.length; i++) {
+      //Create the divs:
+      var div = document.createElement('div');
+      div.addClass('symbol');
+      reel.appendChild(div);
+      var img = document.createElement('img');
+      div.appendChild(img);
+      img.attr('src', symbols[i].src);
+      img.addClass('symbols[i].class');
+    }
+    
     document.getElementById('spin-button').addEventListener('click', () => {
       // Randomize the result
       const randomIndex = Math.floor(Math.random() * symbols.length);
