@@ -30,7 +30,48 @@
   <script>
     const reel = document.getElementById('reel');
     const message = document.getElementById('message');
-    const symbols = ['A', 'K', 'Q', 'J', '10'];
+    const symbols = [
+      {
+        'src' : './symbol_10.png',
+        'class' : 'symbol-10'
+      },
+      {
+        'src' : './symbol_9.png',
+        'class' : 'symbol-9'
+      },
+      {
+        'src' : './symbol_ace.png',
+        'class' : 'symbol-ace'
+      },
+      {
+        'src' : './symbol_axe.png',
+        'class' : 'symbol-axe'
+      },
+      {
+        'src' : './symbol_brain.png',
+        'class' : 'symbol-brain'
+      },
+      {
+        'src' : './symbol_crow.png',
+        'class' : 'symbol-crow'
+      },
+      {
+        'src' : './symbol_jack.png',
+        'class' : 'symbol-jack'
+      },
+      {
+        'src' : './symbol_king.png',
+        'class' : 'symbol-king'
+      },
+      {
+        'src' : './symbol_queen.png',
+        'class' : 'symbol-queen'
+      },
+      {
+        'src' : './symbol_rifle.png',
+        'class' : 'symbol-rifle'
+      },
+    ];
 
     document.getElementById('spin-button').addEventListener('click', () => {
       // Randomize the result
