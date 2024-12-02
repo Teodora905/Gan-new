@@ -145,7 +145,7 @@
       // Randomize the result
       const randomIndex = Math.floor(Math.random() * symbols.length);
       console.log('randomIndex', randomIndex);
-      const stopPosition = (randomIndex * 100) - 200; // Assuming symbol height is 100px
+      const stopPosition = (-randomIndex * 100) + 200; // Assuming symbol height is 100px
 
       // Animate reel spin
       reel.style.left = `${stopPosition}px`;
